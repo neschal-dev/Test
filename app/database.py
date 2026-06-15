@@ -7,7 +7,7 @@ from sqlalchemy.orm import declarative_base, sessionmaker
 
 # यो तपाईंको PostgreSQL database को ठेगाना (credentials) हो।
 # यसमा 'username', 'password', host ('localhost'), port ('5432') र database को नाम ('dbname') हुन्छ।
-DATABASE_URL = "postgresql://username:password@localhost:5432/dbname"
+DATABASE_URL = "postgresql://postgres:admin@localhost:5432/todo_db"
 
 # यसले DATABASE_URL प्रयोग गरेर FastAPI र PostgreSQL बीच एउटा मुख्य कनेक्सन पाइप (engine) तयार गर्छ।
 engine = create_engine(DATABASE_URL)

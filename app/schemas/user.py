@@ -7,10 +7,10 @@ class UserBase(BaseModel):
 
 
 class UserCreate(UserBase):
-    password: str  # Used when receiving data from frontend
+    password: str
 
 
 class UserResponse(UserBase):
-    user_id: int  # Used when sending data back to frontend
+    id: int  
 
     model_config = {"from_attributes": True}
